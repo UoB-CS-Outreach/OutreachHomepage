@@ -1,7 +1,6 @@
 :root {
   --primary: #004B3E;
   --secondary: #87EBD7;
-  --accent: #F5DC64; /* optional */
   --white: #ffffff;
   --black: #000000;
 }
@@ -12,7 +11,7 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--black);
-  background: #80A59F; /* page background (outside content) */
+  background: #80A59F;
 }
 
 .page {
@@ -44,13 +43,12 @@ body {
 }
 
 .logo {
-  height: 68px; /* larger logo */
+  height: 68px;
   width: auto;
   display: block;
   object-fit: contain;
 }
 
-/* Thin vertical divider between logo and title */
 .header-divider {
   width: 1px;
   height: 54px;
@@ -127,7 +125,7 @@ body {
 .card-body {
   margin: 12px 0 0;
   color: rgba(0,0,0,0.65);
-  flex: 1; /* pushes button to bottom */
+  flex: 1;
 }
 
 .card-actions { margin-top: 16px; }
@@ -168,6 +166,15 @@ body {
   margin-top: 12px;
 }
 
+.qr-item {
+  width: 220px;
+  text-align: center;
+}
+
+.qr-link {
+  display: block;
+}
+
 .qr-item img {
   width: 180px;
   height: 180px;
@@ -175,14 +182,22 @@ body {
   border: 1px solid rgba(0,0,0,0.12);
   border-radius: 12px;
   background: var(--white);
+  display: block;
+  margin: 0 auto;
 }
 
-.qr-item p {
-  margin: 10px 0 0;
+.qr-text-link {
+  display: block;
+  margin-top: 10px;
   font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
 }
 
-/* Footer: colour block only */
+.qr-text-link:hover {
+  text-decoration: underline;
+}
+
 .site-footer {
   height: 24px;
   background: var(--primary);

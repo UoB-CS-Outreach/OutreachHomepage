@@ -11,7 +11,6 @@
   <div class="page">
     <header class="site-header">
       <div class="header-inner">
-        <!-- Replace src with your chosen UoB logo file -->
         <a class="logo-link" href="#" aria-label="University of Bradford">
           <img class="logo" src="assets/uob-logo.png" alt="University of Bradford logo" />
         </a>
@@ -27,23 +26,23 @@
 
     <main class="container">
       <section class="intro" aria-labelledby="welcome-title">
-        <h2 id="welcome-title">Welcome</h2>
+        <h2 id="welcome-title">Welcome to the University of Bradford</h2>
         <p>
           Discover engaging computer science activities for students and visitors.
-          These hands-on experiences cover programming, AI &amp; machine learning, and cybersecurity.
+          These aim to give a introduction and taste of topics such as programming, AI, and cybersecurity.
         </p>
       </section>
 
       <section class="activities" aria-label="Activities">
         <article class="activity-card">
           <header class="card-header">
-            <h3>Python Maze Game</h3>
-            <span class="tag">JavaScript / Python</span>
+            <h3>Python Maze Solver</h3>
+            <span class="tag">Python Programming</span>
           </header>
 
           <p class="card-body">
-            An interactive maze-solving activity using Python code. Learn programming concepts while
-            navigating through challenging mazes. Runs directly in your browser.
+            An interactive maze-solving activity using Python code. Use programming concepts to navigate
+            through a maze and reach the goal.
           </p>
 
           <div class="card-actions">
@@ -55,26 +54,8 @@
 
         <article class="activity-card">
           <header class="card-header">
-            <h3>AI &amp; ML Jupyter Notebooks</h3>
-            <span class="tag">Jupyter Notebook</span>
-          </header>
-
-          <p class="card-body">
-            Interactive notebooks introducing AI, machine learning, and engineering concepts.
-            Great for KS3/KS4 students exploring modern computing.
-          </p>
-
-          <div class="card-actions">
-            <a class="btn" href="https://github.com/UoB-CS-Outreach/ks3_ks4_jupyter" target="_blank" rel="noopener noreferrer">
-              Explore activity →
-            </a>
-          </div>
-        </article>
-
-        <article class="activity-card">
-          <header class="card-header">
             <h3>Capture The Flag Challenge</h3>
-            <span class="tag">HTML / Cybersecurity</span>
+            <span class="tag">Cybersecurity</span>
           </header>
 
           <p class="card-body">
@@ -88,6 +69,23 @@
             </a>
           </div>
         </article>
+
+        <article class="activity-card">
+          <header class="card-header">
+            <h3>AI Route Planner</h3>
+            <span class="tag">Machine Learning</span>
+          </header>
+
+          <p class="card-body">
+            App and interactive Jupyter notebook introducing how machine learning with graphs can be used for route planning.
+          </p>
+
+          <div class="card-actions">
+            <a class="btn" href="https://ahmadzr8.github.io/Test_Datasets/" target="_blank" rel="noopener noreferrer">
+              Explore activity →
+            </a>
+          </div>
+        </article>
       </section>
 
       <section class="qr-section" aria-labelledby="quick-access-title">
@@ -95,27 +93,34 @@
 
         <div class="qr-codes">
           <div class="qr-item">
-            <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://uob-cs-outreach.github.io/OutreachHomepage/"
-              alt="QR code for this homepage"
-              loading="lazy"
-            />
-            <p>This homepage</p>
+            <a class="qr-link" href="https://uob-cs-outreach.github.io/OutreachHomepage/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://uob-cs-outreach.github.io/OutreachHomepage/"
+                alt="QR code for this page"
+                loading="lazy"
+              />
+            </a>
+            <a class="qr-text-link" href="https://uob-cs-outreach.github.io/OutreachHomepage/" target="_blank" rel="noopener noreferrer">
+              This page
+            </a>
           </div>
 
           <div class="qr-item">
-            <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/UoB-CS-Outreach"
-              alt="QR code for the GitHub organisation"
-              loading="lazy"
-            />
-            <p>GitHub organisation</p>
+            <a class="qr-link" href="https://www.bradford.ac.uk/external/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.bradford.ac.uk/external/"
+                alt="QR code for the University of Bradford homepage"
+                loading="lazy"
+              />
+            </a>
+            <a class="qr-text-link" href="https://www.bradford.ac.uk/external/" target="_blank" rel="noopener noreferrer">
+              University of Bradford homepage
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer block only (no text) -->
     <footer class="site-footer" aria-hidden="true"></footer>
   </div>
 </body>
