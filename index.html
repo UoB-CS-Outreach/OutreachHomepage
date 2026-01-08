@@ -1,260 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UoB Computer Science Outreach Activities</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-
-        header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .content {
-            padding: 40px 30px;
-        }
-
-        .intro {
-            text-align: center;
-            margin-bottom: 50px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
-        }
-
-        .intro h2 {
-            color: #1e3c72;
-            margin-bottom: 15px;
-        }
-
-        .intro p {
-            font-size: 1.1em;
-            color: #555;
-        }
-
-        .activities {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .activity-card {
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            padding: 25px;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .activity-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            border-color: #667eea;
-        }
-
-        .activity-card h3 {
-            color: #1e3c72;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-        }
-
-        .activity-card p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .activity-card .language {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 15px;
-            font-size: 0.85em;
-            margin-bottom: 15px;
-        }
-
-        .activity-card a {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-            font-weight: bold;
-        }
-
-        .activity-card a:hover {
-            transform: scale(1.05);
-            box-shadow: 0 3px 10px rgba(102, 126, 234, 0.4);
-        }
-
-        .qr-section {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-
-        .qr-section h2 {
-            color: #1e3c72;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .qr-codes {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .qr-item {
-            text-align: center;
-        }
-
-        .qr-item img {
-            width: 200px;
-            height: 200px;
-            background: white;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .qr-item p {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        footer {
-            background: #1e3c72;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer a {
-            color: #667eea;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            .activities {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UoB Computer Science Outreach</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>🎓 UoB Computer Science Outreach</h1>
-            <p>Explore our interactive activities for open days and educational events</p>
-        </header>
+  <div class="page">
+    <header class="site-header">
+      <div class="header-inner">
+        <!-- Replace src with your chosen UoB logo file -->
+        <a class="logo-link" href="#" aria-label="University of Bradford">
+          <img class="logo" src="assets/uob-logo.png" alt="University of Bradford logo" />
+        </a>
 
-        <div class="content">
-            <div class="intro">
-                <h2>Welcome!</h2>
-                <p>Discover engaging computer science activities designed for students and visitors. 
-                   These hands-on experiences cover programming, AI, machine learning, and cybersecurity.</p>
-            </div>
+        <span class="header-divider" aria-hidden="true"></span>
 
-            <div class="activities">
-                <div class="activity-card">
-                    <h3>🎮 Python Maze Game</h3>
-                    <span class="language">JavaScript / Python</span>
-                    <p>An interactive maze-solving activity using Python code. Learn programming concepts while navigating through challenging mazes. Runs directly in your browser!</p>
-                    <a href="https://github.com/UoB-CS-Outreach/PythonMazeGame" target="_blank">Explore Activity →</a>
-                </div>
-
-                <div class="activity-card">
-                    <h3>🤖 AI & ML Jupyter Notebooks</h3>
-                    <span class="language">Jupyter Notebook</span>
-                    <p>Interactive Jupyter notebooks introducing AI, machine learning, and engineering concepts. Perfect for KS3/KS4 students to explore cutting-edge technology.</p>
-                    <a href="https://github.com/UoB-CS-Outreach/ks3_ks4_jupyter" target="_blank">Explore Activity →</a>
-                </div>
-
-                <div class="activity-card">
-                    <h3>🔐 Capture The Flag Challenge</h3>
-                    <span class="language">HTML / Cybersecurity</span>
-                    <p>An exciting CTF (Capture The Flag) challenge to learn about cybersecurity. Test your problem-solving skills and discover the world of digital security.</p>
-                    <a href="https://github.com/UoB-CS-Outreach/CTF_challenge" target="_blank">Explore Activity →</a>
-                </div>
-            </div>
-
-            <div class="qr-section">
-                <h2>📱 Quick Access</h2>
-                <div class="qr-codes">
-                    <div class="qr-item">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://uob-cs-outreach.github.io/OutreachHomepage/" alt="QR Code for this page" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <div style="display:none; width: 200px; height: 200px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; line-height: 160px; font-size: 14px; color: #667eea;">
-                            <a href="https://uob-cs-outreach.github.io/OutreachHomepage/" style="color: #667eea;">uob-cs-outreach.github.io/OutreachHomepage/</a>
-                        </div>
-                        <p>This Homepage</p>
-                    </div>
-                    <div class="qr-item">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/UoB-CS-Outreach" alt="QR Code for GitHub Organization" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <div style="display:none; width: 200px; height: 200px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; line-height: 160px; font-size: 14px; color: #667eea;">
-                            <a href="https://github.com/UoB-CS-Outreach" style="color: #667eea;">github.com/UoB-CS-Outreach</a>
-                        </div>
-                        <p>GitHub Organization</p>
-                    </div>
-                </div>
-            </div>
+        <div class="header-text">
+          <h1>Computer Science Outreach</h1>
+          <p>Interactive activities for open days and educational events</p>
         </div>
+      </div>
+    </header>
 
-        <footer>
-            <p>&copy; 2026 University of Bradford - Computer Science Outreach</p>
-            <p>Visit our <a href="https://github.com/UoB-CS-Outreach" target="_blank">GitHub Organization</a> for more activities</p>
-        </footer>
-    </div>
+    <main class="container">
+      <section class="intro" aria-labelledby="welcome-title">
+        <h2 id="welcome-title">Welcome</h2>
+        <p>
+          Discover engaging computer science activities for students and visitors.
+          These hands-on experiences cover programming, AI &amp; machine learning, and cybersecurity.
+        </p>
+      </section>
+
+      <section class="activities" aria-label="Activities">
+        <article class="activity-card">
+          <header class="card-header">
+            <h3>Python Maze Game</h3>
+            <span class="tag">JavaScript / Python</span>
+          </header>
+
+          <p class="card-body">
+            An interactive maze-solving activity using Python code. Learn programming concepts while
+            navigating through challenging mazes. Runs directly in your browser.
+          </p>
+
+          <div class="card-actions">
+            <a class="btn" href="https://github.com/UoB-CS-Outreach/PythonMazeGame" target="_blank" rel="noopener noreferrer">
+              Explore activity →
+            </a>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <header class="card-header">
+            <h3>AI &amp; ML Jupyter Notebooks</h3>
+            <span class="tag">Jupyter Notebook</span>
+          </header>
+
+          <p class="card-body">
+            Interactive notebooks introducing AI, machine learning, and engineering concepts.
+            Great for KS3/KS4 students exploring modern computing.
+          </p>
+
+          <div class="card-actions">
+            <a class="btn" href="https://github.com/UoB-CS-Outreach/ks3_ks4_jupyter" target="_blank" rel="noopener noreferrer">
+              Explore activity →
+            </a>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <header class="card-header">
+            <h3>Capture The Flag Challenge</h3>
+            <span class="tag">HTML / Cybersecurity</span>
+          </header>
+
+          <p class="card-body">
+            A beginner-friendly CTF challenge to learn cybersecurity basics. Test problem-solving skills
+            and explore digital security concepts.
+          </p>
+
+          <div class="card-actions">
+            <a class="btn" href="https://github.com/UoB-CS-Outreach/CTF_challenge" target="_blank" rel="noopener noreferrer">
+              Explore activity →
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section class="qr-section" aria-labelledby="quick-access-title">
+        <h2 id="quick-access-title">Quick access</h2>
+
+        <div class="qr-codes">
+          <div class="qr-item">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://uob-cs-outreach.github.io/OutreachHomepage/"
+              alt="QR code for this homepage"
+              loading="lazy"
+            />
+            <p>This homepage</p>
+          </div>
+
+          <div class="qr-item">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/UoB-CS-Outreach"
+              alt="QR code for the GitHub organisation"
+              loading="lazy"
+            />
+            <p>GitHub organisation</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer block only (no text) -->
+    <footer class="site-footer" aria-hidden="true"></footer>
+  </div>
 </body>
 </html>
